@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="MageWorx_Example::css/category.css"/>
+    </head>
+    <body>
+        <referenceContainer name="category.product.list.additional">
+            <block class="MageWorx\Example\Block\CategoryAdditional" name="additional_products_info_js" template="MageWorx_Example::products_additional_info.phtml" />
+            <block class="MageWorx\Example\Block\CategorySubtotal" name="display_subtotal_on_category_page" template="MageWorx_Example::category/subtotal.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="categorySubtotal" xsi:type="array">
+                                <item name="component" xsi:type="string">MageWorx_Example/js/view/category-subtotal</item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

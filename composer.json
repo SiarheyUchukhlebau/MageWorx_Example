@@ -1,0 +1,21 @@
+{
+    "name": "mageworx/module-example",
+    "description": "Magento 2 Example module",
+    "require": {
+        "magento/framework": ">=102"
+    },
+    "version": "1.0.0",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageWorx\\Example\\": ""
+        }
+    }
+}

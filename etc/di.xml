@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="mageworx_example_clear_logs" xsi:type="object">MageWorx\Example\Console\Command\ClearLogs</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="MageWorx\Example\Console\Command\ClearLogs">
+        <arguments>
+            <argument name="name" xsi:type="string">mageworx:example:clear-logs</argument>
+            <argument name="description" xsi:type="string" translatable="true">Clear logs</argument>
+        </arguments>
+    </type>
+</config>

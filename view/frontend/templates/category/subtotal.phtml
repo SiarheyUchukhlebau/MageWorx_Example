@@ -1,0 +1,12 @@
+<?php
+/** @var \MageWorx\Example\Block\CategorySubtotal $block */
+?>
+<div class="mw-category-subtotal-container">
+    <h6><?= __('Subtotal now');?></h6>
+    <div id="category-subtotal-container" data-bind="scope: 'categorySubtotal'" data-role="category-subtotal-container">
+        <span data-bind="html: categorySubtotal().category_subtotal"></span>
+    </div>
+    <script type="text/x-magento-init">
+        {"#category-subtotal-container": {"Magento_Ui/js/core/app": <?php echo $block->getJsLayout();?>}}
+    </script>
+</div>

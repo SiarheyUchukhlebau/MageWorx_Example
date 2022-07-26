@@ -1,0 +1,9 @@
+<?php
+/** @var \MageWorx\Example\Block\CategoryAdditional $block */
+?>
+<h3><?= __('Product ids');?></h3>
+<?php
+$productIds = $block->getCollection()->getAllIds();
+echo implode(',', $productIds);
+// Add relevant script here, it's just a sample code which will render all the ids
+?>
