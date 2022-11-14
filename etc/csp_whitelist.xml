@@ -5,12 +5,14 @@
             <values>
                 <value id="newrelic-scripts-wildcard" type="host">https://*.newrelic.com</value>
                 <value id="newrelic-data-scripts-wildcard" type="host">https://*.nr-data.net</value>
+                <value id="klarna-data-scripts-wildcard" type="host">https://*.klarnacdn.net</value>
             </values>
         </policy>
         <policy id="connect-src">
             <values>
                 <value id="newrelic-connect-wildcard" type="host">https://*.newrelic.com</value>
                 <value id="newrelic-data-connect-wildcard" type="host">https://*.nr-data.net</value>
+                <value id="klarna-connect-wildcard" type="host">https://*.klarnacdn.net</value>
             </values>
         </policy>
     </policies>
