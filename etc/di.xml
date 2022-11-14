@@ -20,4 +20,13 @@
             <argument name="description" xsi:type="string" translatable="true">Clear logs</argument>
         </arguments>
     </type>
+    <!-- Disable spectrum backend theme -->
+<!--    <type name="Magento\Theme\Model\View\Design">-->
+<!--        <arguments>-->
+<!--            <argument name="themes" xsi:type="array">-->
+<!--                <item name="frontend" xsi:type="string">Magento/luma</item>-->
+<!--                <item name="adminhtml" xsi:type="string">Magento/backend</item>-->
+<!--            </argument>-->
+<!--        </arguments>-->
+<!--    </type>-->
 </config>
